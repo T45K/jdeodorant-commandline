@@ -18,7 +18,6 @@ import org.eclipse.jface.viewers.StyledString;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyleRange;
 
-import ca.concordia.jdeodorant.eclipse.commandline.Activator;
 import ca.concordia.jdeodorant.eclipse.commandline.diff.TextDiff;
 import ca.concordia.jdeodorant.eclipse.commandline.diff.TextDiff.Diff;
 import ca.concordia.jdeodorant.eclipse.commandline.diff.TextDiff.Operation;
@@ -45,7 +44,7 @@ public class CloneInfoHTMLWriter extends CloneInfoWriter {
 	
 	private final static String START_OF_REPEATING_PART = "<!-- {@START} -->";
 	private final static String END_OF_REPEATING_PART = "<!-- {@END} -->";
-	private final static String TEMPLATE_PATH = Activator.getPluginPath() + "/res/";
+	private final static String TEMPLATE_PATH = "./res/";
 	private final static String TEMPLATE_NAME = "template.htm";
 	private final static String TEMPLATE_EXTRA_FILES_FOLDER = "template.files";
 	private final String templateText;
