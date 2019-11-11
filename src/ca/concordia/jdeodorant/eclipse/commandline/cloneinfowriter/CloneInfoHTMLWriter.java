@@ -44,7 +44,8 @@ public class CloneInfoHTMLWriter extends CloneInfoWriter {
 	
 	private final static String START_OF_REPEATING_PART = "<!-- {@START} -->";
 	private final static String END_OF_REPEATING_PART = "<!-- {@END} -->";
-	private final static String TEMPLATE_PATH = "./res/";
+	private final static String ABSOLUTE_PROJECT_PATH = "/Users/t-nakagw/prog/jdeodorant-commandline";
+	private final static String TEMPLATE_PATH = ABSOLUTE_PROJECT_PATH + "/res/";
 	private final static String TEMPLATE_NAME = "template.htm";
 	private final static String TEMPLATE_EXTRA_FILES_FOLDER = "template.files";
 	private final String templateText;
